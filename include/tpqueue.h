@@ -10,7 +10,7 @@ class TPQueue {
     int counter;
     T *data;
 
- public:
+   public:
     TPQueue() : head(0), tail(0), counter(0), data(new T[size]) {}
     void push(const T &item) {
         if (counter >= size)
@@ -37,7 +37,7 @@ class TPQueue {
             return data[(head++) % size];
         }
     }
-};
+   };
 
 struct SYM {
   char ch;
